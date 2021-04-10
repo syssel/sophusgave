@@ -95,22 +95,23 @@
             document.getElementById("textcontainer3").innerHTML = '<p class="typewriter">til Nintendo eShop . . .</p>';
         };
 
-        function unlockGift(){
+        function text3(){
             document.getElementById("textcontainer5").innerHTML = '<p>ad2-76b-23f-652</p>'            
             document.getElementById("textcontainer6").innerHTML = '<p>Jeg haaber du finder</p>'
             document.getElementById("textcontainer7").innerHTML = '<p>et godt spil &#10084;</p>'
         };
 
+        function unlockGift(){
+            setTimeout(text3, 2000);
+        };
+
         function video(){
             document.getElementById("textcontainer4").innerHTML = `
-            <p class='mr-1'>
-            <a target="_blank" href="https://ia801602.us.archive.org/11/items/Rick_Astley_Never_Gonna_Give_You_Up/Rick_Astley_Never_Gonna_Give_You_Up.mp4">
-                <button onclick="unlockGift();">&#128126;&#128169; Link &#128169;&#128126;</button>
-            </a>
+            <p>
+                <a target="_blank" href="https://ia801602.us.archive.org/11/items/Rick_Astley_Never_Gonna_Give_You_Up/Rick_Astley_Never_Gonna_Give_You_Up.mp4">
+                    <button onclick="unlockGift();">&#128126;&#128169; Link &#128169;&#128126;</button>
+                </a>
             </p>`
-            
-            //'<video onclick="this.play();" id="myVideo" width="320" height="176" loop><source src="mov_bbb.mp4" type="video/mp4">Your browser does not support HTML5 video.</video>'
-            //document.getElementById("textcontainer4").innerHTML = '<video id="myVideo" width="320" height="176" autoplay muted loop><source src="mov_bbb.mp4" type="video/mp4">Your browser does not support HTML5 video.</video>'
         };
 
         setTimeout(text2, 3200);
