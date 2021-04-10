@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <div class="container-large vertical-center">
+    <!-- <div class="row" id="textcontainer1">
+        <div class="col">
+        <ul class="c-rainbow">
+            <li class="c-rainbow__layer c-rainbow__layer--white">TILLYKKE SOPHUS!!!</li>
+            <li class="c-rainbow__layer c-rainbow__layer--orange">TILLYKKE SOPHUS!!!</li>
+            <li class="c-rainbow__layer c-rainbow__layer--red">TILLYKKE SOPHUS!!!</li>
+            <li class="c-rainbow__layer c-rainbow__layer--violet">TILLYKKE SOPHUS!!!</li>
+            <li class="c-rainbow__layer c-rainbow__layer--blue">TILLYKKE SOPHUS!!!</li>
+            <li class="c-rainbow__layer c-rainbow__layer--green">TILLYKKE SOPHUS!!!</li>
+            <li class="c-rainbow__layer c-rainbow__layer--yellow">TILLYKKE SOPHUS!!!</li>
+        </ul>
+        </div>
+    </div> -->
+    <div class="row" id="textcontainer1">
+        <div class="col">
+        <ul class="c-rainbow">
+            <li class="c-rainbow__layer c-rainbow__layer--white">TILLYKKE,</li>
+            <li class="c-rainbow__layer c-rainbow__layer--orange">TILLYKKE,</li>
+            <li class="c-rainbow__layer c-rainbow__layer--red">TILLYKKE,</li>
+            <li class="c-rainbow__layer c-rainbow__layer--violet">TILLYKKE,</li>
+            <li class="c-rainbow__layer c-rainbow__layer--blue">TILLYKKE,</li>
+            <li class="c-rainbow__layer c-rainbow__layer--green">TILLYKKE,</li>
+            <li class="c-rainbow__layer c-rainbow__layer--yellow">TILLYKKE,</li>
+        </ul>
+        </div>
+    </div>    
+    <div class="row" id="textcontainer12">
+        <div class="col">
+        <ul class="c-rainbow">
+            <li class="c-rainbow__layer c-rainbow__layer--white">SOPHUS!!!!</li>
+            <li class="c-rainbow__layer c-rainbow__layer--orange">SOPHUS!!!!</li>
+            <li class="c-rainbow__layer c-rainbow__layer--red">SOPHUS!!!!</li>
+            <li class="c-rainbow__layer c-rainbow__layer--violet">SOPHUS!!!!</li>
+            <li class="c-rainbow__layer c-rainbow__layer--blue">SOPHUS!!!!</li>
+            <li class="c-rainbow__layer c-rainbow__layer--green">SOPHUS!!!!</li>
+            <li class="c-rainbow__layer c-rainbow__layer--yellow">SOPHUS!!!!</li>
+        </ul>
+        </div>
+    </div>
+    
+
+    <div class="row">
+        <div class="col" id="textcontainer2">
+            <p class="typewriter" id="t2">Her kommer din kode</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col" id="textcontainer21">
+            <p class="typewriter" id="t2"></p>
+        </div>
+    </div>    
+        
+    <div class="row">
+        <div class="col" id="textcontainer3">
+            
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col" id="textcontainer4">
+        </div>
+    </div>
+
+    <!-- <div class="row">
+        <div class="col">
+            <button onclick="toggleMute();">
+                Toggle
+                </button>            
+        </div>
+    </div> -->
+    </div>
+
+    <script>
+        function text1(){
+            document.getElementById("textcontainer2").innerHTML = '<p class="typewriter" id="t2">Her kommer din kode</p>';
+        };
+        function text12(){
+            document.getElementById("textcontainer21").innerHTML = '<p class="typewriter" id="t2">til Nintendo eShop . . .</p>';
+        };        
+        
+        setTimeout(text12, 3200);
+        //document.getElementById("textcontainer").getElementById("t2").remove()
+        function text2(){
+            document.getElementById("textcontainer3").innerHTML = '<p class="typewriter" id="t3">Men foerst . . . </p>';
+        };
+        setTimeout(text2, 6500);
+        function video(){
+            document.getElementById("textcontainer4").innerHTML = '<video onclick="this.play();" id="myVideo" width="320" height="176" loop><source src="mov_bbb.mp4" type="video/mp4">Your browser does not support HTML5 video.</video>'
+            //document.getElementById("textcontainer4").innerHTML = '<video id="myVideo" width="320" height="176" autoplay muted loop><source src="mov_bbb.mp4" type="video/mp4">Your browser does not support HTML5 video.</video>'
+        };
+        setTimeout(video, 9500);
+        function videunmute(){
+            var video=document.getElementById("myVideo")
+            video.muted = false;
+        };
+        //setTimeout(videunmute, 8503);
+        function toggleMute() {
+
+        var video=document.getElementById("myVideo")
+
+        if(video.muted){
+            // Start timer
+            video.muted = false;
+            
+        } else {
+            // Do nothing
+        }
+
+        }        
+    </script>    
+</body>
+</html>
