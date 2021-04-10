@@ -17,7 +17,7 @@
     --font-name: Righteous;
   }
   html, body {
-    font-size: 72px;
+    font-size: 4vw;
   }
   body {
     background-color: var(--color-background);
