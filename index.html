@@ -97,7 +97,7 @@
         };
 
         function text3(){
-            document.getElementById("textcontainer5").innerHTML = '<p>ad2-76b-23f-652</p>'            
+            document.getElementById("textcontainer5").innerHTML = '<p style="color:#D14B3D;">ad2-76b-23f-652</p>'            
             document.getElementById("textcontainer6").innerHTML = '<p>Jeg haaber du finder</p>'
             document.getElementById("textcontainer7").innerHTML = '<p>et godt spil &#10084;</p>'
         };
@@ -108,15 +108,17 @@
 
         function video(){
             document.getElementById("textcontainer4").innerHTML = `
+            <div style="padding-top:2%;text-align: center;">
             <p>
                 <a target="_blank" href="https://ia801602.us.archive.org/11/items/Rick_Astley_Never_Gonna_Give_You_Up/Rick_Astley_Never_Gonna_Give_You_Up.mp4">
                     <button onclick="unlockGift();">&#128126;&#128169; Link &#128169;&#128126;</button>
                 </a>
-            </p>`
+            </p>
+            </div>`
         };
 
         setTimeout(text2, 3200);
-        setTimeout(video, 7000);
+        setTimeout(video, 1);
       
     </script>    
 </body>
