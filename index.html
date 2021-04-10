@@ -50,27 +50,34 @@
 
     <div class="row">
         <div class="col" id="textcontainer2">
-            <p class="typewriter" id="t2">Her kommer din kode</p>
+            <p class="typewriter">Her kommer din kode</p>
         </div>
     </div>
 
     <div class="row">
-        <div class="col" id="textcontainer21">
-            <p class="typewriter" id="t2"></p>
+        <div class="col" id="textcontainer3">
         </div>
     </div>    
-        
-    <div class="row">
-        <div class="col" id="textcontainer3">
-            
-        </div>
-    </div>
 
     <div class="row">
         <div class="col" id="textcontainer4">
         </div>
     </div>
 
+    <div class="row">
+        <div class="col" id="textcontainer5">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col" id="textcontainer6">
+        </div>
+    </div>    
+
+    <div class="row">
+        <div class="col" id="textcontainer7">
+        </div>
+    </div>    
     <!-- <div class="row">
         <div class="col">
             <button onclick="toggleMute();">
@@ -82,41 +89,33 @@
 
     <script>
         function text1(){
-            document.getElementById("textcontainer2").innerHTML = '<p class="typewriter" id="t2">Her kommer din kode</p>';
+            document.getElementById("textcontainer2").innerHTML = '<p class="typewriter">Her kommer din kode</p>';
         };
-        function text12(){
-            document.getElementById("textcontainer21").innerHTML = '<p class="typewriter" id="t2">til Nintendo eShop . . .</p>';
-        };        
-        
-        setTimeout(text12, 3200);
-        //document.getElementById("textcontainer").getElementById("t2").remove()
         function text2(){
-            document.getElementById("textcontainer3").innerHTML = '<p class="typewriter" id="t3">Men foerst . . . </p>';
+            document.getElementById("textcontainer3").innerHTML = '<p class="typewriter">til Nintendo eShop . . .</p>';
         };
-        setTimeout(text2, 6500);
+
+        function unlockGift(){
+            document.getElementById("textcontainer5").innerHTML = '<p>ad2-76b-23f-652</p>'            
+            document.getElementById("textcontainer6").innerHTML = '<p>Jeg haaber du finder</p>'
+            document.getElementById("textcontainer7").innerHTML = '<p>et godt spil &#10084;</p>'
+        };
+
         function video(){
-            document.getElementById("textcontainer4").innerHTML = '<video onclick="this.play();" id="myVideo" width="320" height="176" loop><source src="mov_bbb.mp4" type="video/mp4">Your browser does not support HTML5 video.</video>'
+            document.getElementById("textcontainer4").innerHTML = `
+            <p class='mr-1'>
+            <a target="_blank" href="https://ia801602.us.archive.org/11/items/Rick_Astley_Never_Gonna_Give_You_Up/Rick_Astley_Never_Gonna_Give_You_Up.mp4">
+                <button onclick="unlockGift();">&#128126;&#128169; Link &#128169;&#128126;</button>
+            </a>
+            </p>`
+            
+            //'<video onclick="this.play();" id="myVideo" width="320" height="176" loop><source src="mov_bbb.mp4" type="video/mp4">Your browser does not support HTML5 video.</video>'
             //document.getElementById("textcontainer4").innerHTML = '<video id="myVideo" width="320" height="176" autoplay muted loop><source src="mov_bbb.mp4" type="video/mp4">Your browser does not support HTML5 video.</video>'
         };
-        setTimeout(video, 9500);
-        function videunmute(){
-            var video=document.getElementById("myVideo")
-            video.muted = false;
-        };
-        //setTimeout(videunmute, 8503);
-        function toggleMute() {
 
-        var video=document.getElementById("myVideo")
-
-        if(video.muted){
-            // Start timer
-            video.muted = false;
-            
-        } else {
-            // Do nothing
-        }
-
-        }        
+        setTimeout(text2, 3200);
+        setTimeout(video, 7000);
+      
     </script>    
 </body>
 </html>
