@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <div class="container vertical-center">
+    <!-- <div class="row" id="textcontainer1">
+        <div class="col">
+        <ul class="c-rainbow">
+            <li class="c-rainbow__layer c-rainbow__layer--white">TILLYKKE SOPHUS!!!</li>
+            <li class="c-rainbow__layer c-rainbow__layer--orange">TILLYKKE SOPHUS!!!</li>
+            <li class="c-rainbow__layer c-rainbow__layer--red">TILLYKKE SOPHUS!!!</li>
+            <li class="c-rainbow__layer c-rainbow__layer--violet">TILLYKKE SOPHUS!!!</li>
+            <li class="c-rainbow__layer c-rainbow__layer--blue">TILLYKKE SOPHUS!!!</li>
+            <li class="c-rainbow__layer c-rainbow__layer--green">TILLYKKE SOPHUS!!!</li>
+            <li class="c-rainbow__layer c-rainbow__layer--yellow">TILLYKKE SOPHUS!!!</li>
+        </ul>
+        </div>
+    </div> -->
+    <div class="row" id="textcontainer1">
+
+    </div>
+    
+    <div class="row">
+        <div class="col" id="textcontainer2">
+            <p class="typewriter">Bare rolig, Sophus . . .</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col" id="textcontainer3">
+        </div>
+    </div>    
+
+    <div class="row">
+        <div class="col" id="textcontainer4">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col" id="textcontainer5">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col" id="textcontainer6">
+        </div>
+    </div>    
+
+    <div class="row">
+        <div class="col" id="textcontainer7">
+        </div>
+    </div>    
+    <!-- <div class="row">
+        <div class="col">
+            <button onclick="toggleMute();">
+                Toggle
+                </button>            
+        </div>
+    </div> -->
+    </div>
+
+    <script>
+        function text1(){
+            document.getElementById("textcontainer2").innerHTML = '<p class="typewriter">Bare rolig, Sophus . . .</p>';
+        };
+        function text2(){
+            document.getElementById("textcontainer3").innerHTML = "<p class='typewriter'>Du bliver ej Rick rollet</p>";
+        };
+
+        function unlockGift(){
+            setTimeout(text3, 2000);
+        };
+
+        function video(){
+            document.getElementById("textcontainer4").innerHTML = `
+            <div style="padding-top:2%;text-align: center;">
+            <p>
+                <a href="./page_3.html">
+                    <button onclick="unlockGift();">&#127915; Ticket to heaven &#128124;</button>
+                </a>
+            </p>
+            </div>`
+        };
+
+        setTimeout(text2, 4200);      
+        setTimeout(video, 8500);
+      
+    </script>    
+</body>
+</html>
